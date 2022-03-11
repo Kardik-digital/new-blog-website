@@ -10,6 +10,13 @@ const likeNumber = document.querySelector("#like-number");
 const dislikeNumber = document.querySelector("#dislike-number");
 const loveNumber = document.querySelector("#love-number");
 
+// REDIRECT IF THERE IS NO VALUE ATTACHED TO THE BLOG ID SEARCH PARAMETER
+if (blogId == "" || blogId == null) {
+  window.location = "./";
+}
+
+console.log(blogId);
+
 window.onload = getBlog();
 
 function getBlog() {

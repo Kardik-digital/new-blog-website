@@ -9,7 +9,7 @@ if ($countBlogs >= 1) {
 
  echo json_encode($getBlogs->fetchAll());
 } else {
- echo $countBlogs;
+ echo "noBlogs";
 }
 
 }

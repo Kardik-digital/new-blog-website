@@ -22,7 +22,7 @@ window.onload = function () {
   xhr.open("GET", "./php/getblogs.php?get_blogs", true);
   xhr.onload = function () {
     if (this.status == 200) {
-      if (this.responseText != "") {
+      if (this.responseText != "noBlogs") {
         const blogs = JSON.parse(this.responseText);
         for (let index in blogs) {
           let blogContent =
@@ -40,6 +40,9 @@ window.onload = function () {
 
           blogContainer.innerHTML += blogContent;
         }
+      } else if (this.responseText == "noBlogs") {
+        message.classList.add("message-show", "error-message");
+        messageContent.innerHTML = "No blogs have been posted";
       }
     }
   };

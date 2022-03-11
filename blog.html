@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/all.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <title>Web Blog Home</title>
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+
+    <div class="preloader">
+        <img src="./images/Spin-1s-200px.svg" alt="">
+    </div>
+
+    <!-- PRELOADER -->
+
+    <!-- NOTIFICATION MESSAGES -->
+
+    <div class="message">
+        <span class="message-content"></span>
+        <i class="fas fa-times close-message"></i>
+    </div>
+
+    <!-- NOTIFICATION MESSAGES -->
+
+    <!-- NAVIGATION BAR -->
+    <nav class="nav">
+        <a href="#" class="logo">
+            <h2>Web_blog</h2>
+        </a>
+        <ul class="nav-list">
+
+            <li class="list-item">
+                <a href="./" class="link">Home</a>
+            </li>
+
+            <li class="list-item">
+                <a href="./index#about" class="link">About</a>
+            </li>
+
+            <li class="list-item">
+                <a href="./blogs" class="link">Blogs</a>
+            </li>
+
+            <a href="./createblog" class="link cta open-form-modal">New Blog</a>
+
+        </ul>
+    </nav>
+
+    <section class="blog-section">
+
+        <h3 class="blog-title"></h3>
+        <div class="reactions">
+            <h5>Reactions</h5>
+            <div class="container">
+                <div class=" reaction" id="like">
+                    <div id="like-number">0</div>
+                    <i class="fas fa-thumbs-up"> </i>
+                </div>
+                <div class=" reaction" id="dislike">
+                    <div id="dislike-number">0</div>
+                    <i class="fas fa-thumbs-down"></i>
+                </div>
+                <div class=" reaction" id="love">
+                    <div id="love-number">0</div>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <div class="blog-container">
+        </div>
+
+
+    </section>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/blog.js"></script>
+    <!-- NAVIGATION BAR -->
+</body>
+
+</html>

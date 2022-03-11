@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./libraries/quill/quill.snow.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/createblog.css">
+    <title>Create blog</title>
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="nav">
+        <a href="#" class="logo">
+            <h2>Web_blog</h2>
+        </a>
+        <ul class="nav-list">
+
+            <li class="list-item">
+                <a href="./" class="link">Home</a>
+            </li>
+
+            <li class="list-item">
+                <a href="./index#about" class="link">About</a>
+            </li>
+
+            <li class="list-item">
+                <a href="./blog.html" class="link">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- NAVIGATION BAR -->
+
+    <!-- NOTIFICATION MESSAGES -->
+
+    <div class="message">
+        <span class="message-content"></span>
+        <i class="fas fa-times close-message"></i>
+    </div>
+
+
+    <!-- NOTIFICATION MESSAGES -->
+
+    <!-- FINAL FORM BEFORE BLOG SUBMITTION -->
+    <div class="form-container">
+        <form id="blog-form">
+            <i class="fas fa-times close-form-modal"></i>
+            <h4 class="text-center clr-accent">Before You publish your blog</h4>
+            <div class="input-group">
+                <label for="blog-title">Blog Title</label>
+                <input type="text" placeholder="how to center a div" id="blog-title">
+            </div>
+            <div class="input-group">
+                <label for="tags">Tags</label>
+                <input type="text" placeholder="Javascript, Html" id="tags">
+            </div>
+            <button class="create-blog">Create blog</button>
+        </form>
+    </div>
+    <!-- FINAL FORM BEFORE BLOG SUBMITTION -->
+
+
+    <section class="editor-section">
+        <h3>Share Ideas. Create a blog</h3>
+
+        <!-- ACTUAL BLOG CONTENT IS TRANSFERED TO THIS CONTAINER -->
+        <textarea type="text" hidden id="input"></textarea>
+        <!-- ACTUAL BLOG CONTENT IS TRANSFERED TO THIS CONTAINER -->
+
+        <div id="standalone-container">
+            <div id="toolbar-container">
+                <span class="ql-formats">
+                    <select class="ql-font"></select>
+                    <select class="ql-size"></select>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-bold"></button>
+                    <button class="ql-italic"></button>
+                    <button class="ql-underline"></button>
+                    <button class="ql-strike"></button>
+                </span>
+                <span class="ql-formats">
+                    <select class="ql-color"></select>
+                    <select class="ql-background"></select>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-script" value="sub"></button>
+                    <button class="ql-script" value="super"></button>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-header" value="1"></button>
+                    <button class="ql-header" value="2"></button>
+                    <button class="ql-blockquote"></button>
+                    <button class="ql-code-block"></button>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-list" value="ordered"></button>
+                    <button class="ql-list" value="bullet"></button>
+                    <button class="ql-indent" value="-1"></button>
+                    <button class="ql-indent" value="+1"></button>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-direction" value="rtl"></button>
+                    <select class="ql-align"></select>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-link"></button>
+                </span>
+            </div>
+            <div id="editor-container"></div>
+        </div>
+        <button class="save-blog">Save blog</button>
+
+
+
+    </section>
+
+
+
+    <script src="./libraries/quill/quill.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/createblog.js"></script>
+
+
+</body>
+
+</html>
